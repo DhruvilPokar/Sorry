@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Truly Sorry ❤️ | Sister</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            pink: '#ff4d8d',
+                            darkPink: '#e03370',
+                            softPink: '#ffe4ef',
+                            purple: '#7c3aed',
+                        }
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'bounce-gentle': 'bounceGentle 2s infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+                            '50%': { transform: 'translateY(-15px) rotate(3deg)' },
+                        },
+                        bounceGentle: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-6px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sacramento&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        .font-cursive {
+            font-family: 'Sacramento', cursive;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.90);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+        }
+        .heart-bg {
+            position: absolute;
+            pointer-events: none;
+            animation: floatUp 8s linear infinite;
+            will-change: transform, opacity;
+        }
+        @keyframes floatUp {
+            0% { transform: translateY(105vh) scale(0.5) rotate(0deg); opacity: 0.8; }
+            100% { transform: translateY(-10vh) scale(1.2) rotate(360deg); opacity: 0; }
+        }
+        .confetti-particle {
+            position: fixed;
+            pointer-events: none;
+            z-index: 60;
+            animation: confettiFall 3.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+            will-change: transform, opacity;
+        }
+        @keyframes confettiFall {
+            0% { transform: translate(0, 0) rotate(0deg); opacity: 1; }
+            100% { transform: translate(var(--dx), var(--dy)) rotate(720deg); opacity: 0; }
+        }
+        .hug-bubble {
+            position: fixed;
+            pointer-events: none;
+            z-index: 50;
+            animation: hugFloat 1.2s ease-out forwards;
+            font-weight: 700;
+            color: #ff3d7f;
+            will-change: transform, opacity;
+        }
+        @keyframes hugFloat {
+            0% { opacity: 1; transform: translateY(0) scale(1); }
+            100% { opacity: 0; transform: translateY(-50px) scale(1.4); }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-pink-100 via-rose-100 to-purple-200 min-h-screen flex items-center justify-center p-4 overflow-x-hidden relative">
+
+    <!-- Ambient Floating Hearts Container -->
+    <div id="ambient-hearts" class="fixed inset-0 pointer-events-none z-0 overflow-hidden"></div>
+
+    <!-- Main Container -->
+    <div class="relative z-10 w-full max-w-2xl my-6">
+        
+        <!-- Header Ribbon -->
+        <div class="text-center mb-4 animate-bounce-gentle">
+            <span class="inline-flex items-center gap-2 bg-white/90 backdrop-blur px-4 py-1.5 rounded-full text-xs font-semibold text-rose-600 shadow-sm border border-rose-200">
+                <span>💌</span> A Message From Your Brother
+            </span>
+        </div>
+
+        <!-- Main Card -->
+        <div class="glass-card rounded-3xl p-6 md:p-10 shadow-2xl transition-all duration-300 relative overflow-hidden">
+            
+            <!-- Cute Illustration Top -->
+            <div class="flex justify-center mb-4">
+                <div class="w-20 h-20 bg-rose-100 rounded-full flex items-center justify-center shadow-inner text-4xl animate-pulse-slow">
+                    🥺
+                </div>
+            </div>
+
+            <!-- Title -->
+            <h1 class="text-3xl md:text-4xl font-extrabold text-center text-gray-800 mb-2 tracking-tight">
+                I'm So Sorry, Sister <span class="text-brand-pink inline-block animate-pulse">❤️</span>
+            </h1>
+            <p class="text-center text-gray-500 text-sm mb-6 font-medium">Please hear me out...</p>
+
+            <!-- Letter Body -->
+            <div class="bg-white/80 rounded-2xl p-5 md:p-6 text-gray-700 leading-relaxed space-y-4 shadow-sm border border-pink-100 text-base md:text-lg">
+                <p class="font-semibold text-rose-500">Dear Sister,</p>
+                <p>
+                    hu hachu kavu to make nathi khaber tu avi reta  lai mane a loka thi koi proble nathi and koi vdo nathi and tane evu thatu hoy ka hu amane thi jealous thavu chu to evu nathi mare mummy ni kasame and ashruti ni kasame and hu thodu vadher over protective thai gyo chu .
+                </p>
+                <p>
+                    and break time per ape class me hate and me agade javenu kidu tare all ne javenu kidu tu naki ape and aa hu sachu kavu chu mummy and ashruti in kasame hu evu kave mage to to ka ape all means krissana riva priyansh hu and tu and daksh aryan and parva all ne ek ek bench agade jave mage to to naki apane 
+                </p>
+                <p>
+                    really i am sorry hu tane hurt karev nathi mageto and mane ane thi koi proble nathi ka tu baje jode vat kare kam ka a tare life che and aa vasatu hu tont me nathi kato sorry for my all this behaviour tu mane bus thode day nu time da jam ka old car ne start thate var lage and jam hu bhi juno thyo to mane bhi mare pale vade dhruvil me avate thode day lagase like mix to mix 5 to 8 day 
+                </p>
+                <div class="pt-2 border-t border-rose-100 text-right">
+                    <p class="font-cursive text-3xl text-rose-600 leading-tight">With lots of love,</p>
+                    <p class="font-bold text-gray-800">Your Brother 👦🏻</p>
+                </div>
+            </div>
+
+            <!-- Interactive Promises -->
+            <div class="mt-6">
+                <p class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3 text-center">My Promises To You</p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-center text-xs">
+                    <div class="bg-rose-50/90 p-3 rounded-xl border border-rose-100 text-rose-700 font-medium">
+                        🤝 <span class="block mt-1 font-bold">Listen Better</span>
+                    </div>
+                    <div class="bg-pink-50/90 p-3 rounded-xl border border-pink-100 text-pink-700 font-medium">
+                        🕊️ <span class="block mt-1 font-bold">No More Arguments</span>
+                    </div>
+                    <div class="bg-purple-50/90 p-3 rounded-xl border border-purple-100 text-purple-700 font-medium">
+                        🍦 <span class="block mt-1 font-bold">Treats On Me</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Area -->
+            <div id="action-area" class="mt-8 relative min-h-[100px] flex flex-col items-center justify-center">
+                
+                <div class="flex flex-wrap items-center justify-center gap-4 w-full relative" id="button-wrapper">
+                    <button id="yes-btn" class="bg-gradient-to-r from-rose-500 to-brand-pink hover:from-rose-600 hover:to-brand-darkPink text-white font-bold text-lg px-8 py-3.5 rounded-full shadow-lg shadow-rose-200 transform transition-transform duration-200 flex items-center gap-2 z-10 active:scale-95">
+                        <span>❤️</span> Forgive Me
+                    </button>
+
+                    <button id="no-btn" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold text-base px-6 py-3.5 rounded-full transition-all duration-200 shadow-sm z-20">
+                        😅 No
+                    </button>
+                </div>
+
+                <p id="no-hint" class="text-xs text-rose-400 mt-3 font-medium opacity-0 transition-opacity duration-300 text-center">
+                    (Hint: The "No" button is feeling a bit shy today! 😜)
+                </p>
+            </div>
+
+            <!-- Virtual Hug Counter Module -->
+            <div class="mt-6 pt-6 border-t border-gray-100 flex flex-col items-center">
+                <button id="hug-btn" class="group relative bg-pink-50 hover:bg-pink-100 text-rose-600 text-xs font-bold px-4 py-2 rounded-full transition border border-pink-200 flex items-center gap-2 active:scale-95">
+                    <span>🫂</span> Send Virtual Hug to Brother
+                    <span id="hug-count" class="bg-rose-500 text-white rounded-full px-2 py-0.5 text-[10px]">0</span>
+                </button>
+            </div>
+
+            <!-- Success Message Box -->
+            <div id="success-box" class="hidden mt-6 bg-gradient-to-r from-rose-50 to-pink-50 border-2 border-rose-300 rounded-2xl p-6 text-center transform scale-95 transition-all duration-500">
+                <div class="text-5xl mb-3 animate-bounce">🎉</div>
+                <h2 class="text-2xl font-bold text-rose-600 mb-2">Thank You, Best Sister! ❤️</h2>
+                <p class="text-gray-700 text-base leading-relaxed">
+                    You have the biggest heart! I promise to make you proud and be a better brother every single day.
+                </p>
+                 <p class="text-gray-700 text-base leading-relaxed">
+                    ager ta mane maff kare didu hoy to plz mane call kareja and mare ek ek bhule and ek ek change kaje and hu su karu ka pale javo thai javu and pale hu kavo hato a kaje and tu to mare more then a blood related sister che ja love sistem nu mane aje hu di nathi maleyu a ta mane apayu che and mane help kar suderav ma.
+                </p>
+                <div class="mt-4 inline-flex items-center gap-2 bg-white px-4 py-2 rounded-xl text-xs font-semibold text-rose-500 shadow-sm border border-rose-100">
+                    <span>✨</span> sorry for every think🍦🍰
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <p class="text-center text-xs text-gray-500 mt-4">Made with patience, love, and a lot of apologies ❤️</p>
+    </div>
+
+    <script>
+        // Web Audio API
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        let audioCtx;
+
+        function initAudio() {
+            if (!audioCtx) audioCtx = new AudioContext();
+        }
+
+        function playSound(type) {
+            try {
+                initAudio();
+                if (audioCtx.state === 'suspended') audioCtx.resume();
+
+                const now = audioCtx.currentTime;
+
+                if (type === 'pop') {
+                    const osc = audioCtx.createOscillator();
+                    const gain = audioCtx.createGain();
+                    osc.connect(gain);
+                    gain.connect(audioCtx.destination);
+                    osc.type = 'sine';
+                    osc.frequency.setValueAtTime(400, now);
+                    osc.frequency.exponentialRampToValueAtTime(800, now + 0.1);
+                    gain.gain.setValueAtTime(0.3, now);
+                    gain.gain.exponentialRampToValueAtTime(0.01, now + 0.1);
+                    osc.start(now);
+                    osc.stop(now + 0.1);
+                } else if (type === 'celebrate') {
+                    const freqs = [523.25, 659.25, 783.99, 1046.50];
+                    freqs.forEach((f, idx) => {
+                        const o = audioCtx.createOscillator();
+                        const g = audioCtx.createGain();
+                        o.connect(g);
+                        g.connect(audioCtx.destination);
+                        o.type = 'triangle';
+                        o.frequency.setValueAtTime(f, now + idx * 0.08);
+                        g.gain.setValueAtTime(0.2, now + idx * 0.08);
+                        g.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.08 + 0.3);
+                        o.start(now + idx * 0.08);
+                        o.stop(now + idx * 0.08 + 0.3);
+                    });
+                } else if (type === 'dodge') {
+                    const osc = audioCtx.createOscillator();
+                    const gain = audioCtx.createGain();
+                    osc.connect(gain);
+                    gain.connect(audioCtx.destination);
+                    osc.type = 'sine';
+                    osc.frequency.setValueAtTime(300, now);
+                    osc.frequency.linearRampToValueAtTime(150, now + 0.15);
+                    gain.gain.setValueAtTime(0.2, now);
+                    gain.gain.linearRampToValueAtTime(0.01, now + 0.15);
+                    osc.start(now);
+                    osc.stop(now + 0.15);
+                }
+            } catch(e) {}
+        }
+
+        // Ambient Background Hearts
+        const ambientContainer = document.getElementById('ambient-hearts');
+        const heartEmojis = ['❤️', '💖', '🌸', '✨', '💕', '💗'];
+
+        function createAmbientHeart() {
+            const heart = document.createElement('div');
+            heart.className = 'heart-bg';
+            heart.innerText = heartEmojis[Math.floor(Math.random() * heartEmojis.length)];
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = (6 + Math.random() * 6) + 's';
+            heart.style.fontSize = (16 + Math.random() * 20) + 'px';
+            ambientContainer.appendChild(heart);
+
+            setTimeout(() => heart.remove(), 12000);
+        }
+
+        setInterval(createAmbientHeart, 800);
+        for(let i = 0; i < 8; i++) createAmbientHeart();
+
+        // Dodging "No" Button Logic
+        const noBtn = document.getElementById('no-btn');
+        const yesBtn = document.getElementById('yes-btn');
+        const noHint = document.getElementById('no-hint');
+        let dodgeCount = 0;
+
+        const evasiveTexts = [
+            "😅 No",
+            "Are you sure? 🥺",
+            "Think again! 💭",
+            "Pretty please? 🌸",
+            "You can't click this! 😜",
+            "Try the red button! ❤️",
+            "Still trying? 😂",
+            "Nice try! 🏃‍♂️",
+            "Okay, forgive me now? 🥺"
+        ];
+
+        function moveNoButton() {
+            playSound('dodge');
+            dodgeCount++;
+            
+            noHint.style.opacity = '1';
+
+            // Change button text safely
+            const textIndex = Math.min(dodgeCount, evasiveTexts.length - 1);
+            noBtn.innerText = evasiveTexts[textIndex];
+
+            // Scale up "Yes" button
+            const currentScale = 1 + Math.min(dodgeCount * 0.05, 0.35);
+            yesBtn.style.transform = `scale(${currentScale})`;
+
+            // Ensure absolute coordinate context without transforms interference
+            if (noBtn.style.position !== 'fixed') {
+                noBtn.style.position = 'fixed';
+                noBtn.style.zIndex = '50';
+            }
+
+            const padding = 20;
+            const btnRect = noBtn.getBoundingClientRect();
+            const btnWidth = btnRect.width || 120;
+            const btnHeight = btnRect.height || 45;
+
+            const maxX = Math.max(padding, window.innerWidth - btnWidth - padding);
+            const maxY = Math.max(padding, window.innerHeight - btnHeight - padding);
+
+            const randomX = Math.floor(padding + Math.random() * (maxX - padding));
+            const randomY = Math.floor(padding + Math.random() * (maxY - padding));
+
+            noBtn.style.left = `${randomX}px`;
+            noBtn.style.top = `${randomY}px`;
+        }
+
+        noBtn.addEventListener('mouseenter', moveNoButton);
+        noBtn.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            moveNoButton();
+        });
+
+        // Forgive Me ("Yes") Action
+        const successBox = document.getElementById('success-box');
+        const buttonWrapper = document.getElementById('button-wrapper');
+
+        yesBtn.addEventListener('click', () => {
+            playSound('celebrate');
+
+            // Hide action buttons & hints
+            buttonWrapper.style.display = 'none';
+            noHint.style.display = 'none';
+            if (noBtn) noBtn.style.display = 'none';
+
+            // Show Success Box
+            successBox.classList.remove('hidden');
+            setTimeout(() => {
+                successBox.classList.remove('scale-95');
+                successBox.classList.add('scale-100');
+            }, 10);
+
+            // Trigger Confetti Explosion
+            triggerConfetti();
+        });
+
+        function triggerConfetti() {
+            const colors = ['#ff3d7f', '#ff9ebb', '#7c3aed', '#fbbf24', '#34d399', '#60a5fa'];
+            const shapes = ['❤️', '💖', '✨', '🎉', '🌸', '⭐'];
+
+            for (let i = 0; i < 90; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'confetti-particle';
+                
+                if (Math.random() > 0.4) {
+                    particle.innerText = shapes[Math.floor(Math.random() * shapes.length)];
+                    particle.style.fontSize = (16 + Math.random() * 20) + 'px';
+                } else {
+                    particle.style.width = (8 + Math.random() * 10) + 'px';
+                    particle.style.height = (8 + Math.random() * 10) + 'px';
+                    particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                    particle.style.borderRadius = Math.random() > 0.5 ? '50%' : '3px';
+                }
+
+                const startX = window.innerWidth / 2;
+                const startY = window.innerHeight / 2;
+
+                particle.style.left = startX + 'px';
+                particle.style.top = startY + 'px';
+
+                const angle = Math.random() * Math.PI * 2;
+                const velocity = 150 + Math.random() * 350;
+                const dx = Math.cos(angle) * velocity + 'px';
+                const dy = (Math.sin(angle) * velocity + 150) + 'px';
+
+                particle.style.setProperty('--dx', dx);
+                particle.style.setProperty('--dy', dy);
+
+                document.body.appendChild(particle);
+
+                setTimeout(() => particle.remove(), 3500);
+            }
+        }
+
+        // Virtual Hug Counter
+        const hugBtn = document.getElementById('hug-btn');
+        const hugCountSpan = document.getElementById('hug-count');
+        let hugCount = 0;
+
+        hugBtn.addEventListener('click', (e) => {
+            playSound('pop');
+            hugCount++;
+            hugCountSpan.innerText = hugCount;
+
+            // Spawn floating "+1 Hug 🫂" bubble with fixed screen coordinates
+            const bubble = document.createElement('div');
+            bubble.className = 'hug-bubble text-xs';
+            bubble.innerText = '+1 Hug 🫂';
+            
+            const rect = hugBtn.getBoundingClientRect();
+            bubble.style.left = (rect.left + rect.width / 2 - 25) + 'px';
+            bubble.style.top = (rect.top - 10) + 'px';
+
+            document.body.appendChild(bubble);
+            setTimeout(() => bubble.remove(), 1200);
+        });
+    </script>
+</body>
+</html>
